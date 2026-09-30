@@ -1,11 +1,7 @@
 name: Deploy static content to Pages
 
 on:
-  schedule:
-    - cron: "0 0 * * *"
-  workflow_run:
-    workflows: ["Update Job Listings"]
-    types: [completed]
+  push:
     branches: [main]
   workflow_dispatch:
 
@@ -20,7 +16,6 @@ concurrency:
 
 jobs:
   deploy:
-    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
