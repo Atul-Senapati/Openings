@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Openings — Every job, one search</title>
+    <meta name="description" content="Openings brings together over a million live job listings from Greenhouse, Lever, Ashby, Workday, iCIMS, BambooHR and Paylocity. Search by title, location, level and salary, refreshed daily.">
+    <meta name="theme-color" content="#4a50e0">
+    <meta property="og:title" content="Openings — Every job, one search">
+    <meta property="og:description" content="Over a million live job listings from 7 hiring platforms, searchable in one place and refreshed daily.">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="alternate icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script type="module" src="js/app.js" defer></script>
+</head>
+
+<body>
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+        <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></symbol>
+        <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></symbol>
+        <symbol id="i-sliders" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/><circle cx="8" cy="6" r="2" fill="#fff"/><circle cx="16" cy="12" r="2" fill="#fff"/><circle cx="10" cy="18" r="2" fill="#fff"/></symbol>
+        <symbol id="i-x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+        <symbol id="i-arrow-ur" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></symbol>
+        <symbol id="i-left" viewBox="0 0 24 24"><path d="m15 6-6 6 6 6"/></symbol>
+        <symbol id="i-right" viewBox="0 0 24 24"><path d="m9 6 6 6-6 6"/></symbol>
+        <symbol id="i-down" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+        <symbol id="i-bookmark" viewBox="0 0 24 24"><path d="M6.5 4h11v16.5L12 16.8 6.5 20.5z"/></symbol>
+        <symbol id="i-check" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m8 12.5 2.8 2.8L16 9.5"/></symbol>
+        <symbol id="i-ban" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M5.6 5.6l12.8 12.8"/></symbol>
+        <symbol id="i-grid" viewBox="0 0 24 24"><rect x="4" y="4" width="7" height="7" rx="1.5"/><rect x="13" y="4" width="7" height="7" rx="1.5"/><rect x="4" y="13" width="7" height="7" rx="1.5"/><rect x="13" y="13" width="7" height="7" rx="1.5"/></symbol>
+        <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></symbol>
+        <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+        <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+        <symbol id="i-sort" viewBox="0 0 24 24"><path d="m8 9 4-4 4 4M8 15l4 4 4-4"/></symbol>
+        <symbol id="i-briefcase" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2M3 13h18"/></symbol>
+    </svg>
+
+    <div class="app">
+        <!-- ══ Left navigation ═══════════════════════════════ -->
+        <aside id="nav-drawer" class="offcanvas-lg offcanvas-start sidenav" tabindex="-1" aria-label="Filters">
+            <div class="sn-top">
+                <a class="brand" href="./" aria-label="Openings home">
+                    <svg class="logo" viewBox="0 0 32 32" aria-hidden="true">
+                        <defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#6d78ff"/><stop offset="1" stop-color="#3a3fd6"/></linearGradient></defs>
+                        <path d="M27 16A11 11 0 1 1 21.5 6.47" fill="none" stroke="url(#lg)" stroke-width="4.6" stroke-linecap="round"/>
+                        <circle cx="25.53" cy="10.5" r="2.6" fill="#3a3fd6"/>
+                    </svg>
+                    <span class="brand-name">Openings</span>
+                </a>
+                <button type="button" class="x-btn d-lg-none" data-bs-dismiss="offcanvas" data-bs-target="#nav-drawer" aria-label="Close filters">
+                    <svg class="ic" aria-hidden="true"><use href="#i-x"/></svg>
+                </button>
+            </div>
+
+            <div class="rail-head">
+                <h2><svg class="ic" aria-hidden="true"><use href="#i-sliders"/></svg>Filters<span class="count-badge" hidden>0</span></h2>
+                <button type="button" class="link-btn" id="clear-filters">Clear all</button>
+            </div>
+
+            <div class="rail-body">
+                <details class="fsec" open data-fields="filter-posted">
+                    <summary><span class="fsec-title">Date posted</span><em class="sum"></em><svg class="ic chev" aria-hidden="true"><use href="#i-down"/></svg></summary>
+                    <div class="fsec-body"><div class="chips"><button type="button" class="fopt" data-set="filter-posted" data-value="">Any time</button><button type="button" class="fopt" data-set="filter-posted" data-value="1">24 hours</button><button type="button" class="fopt" data-set="filter-posted" data-value="3">3 days</button><button type="button" class="fopt" data-set="filter-posted" data-value="7">7 days</button><button type="button" class="fopt" data-set="filter-posted" data-value="30">30 days</button></div></div>
+                </details>
+                <details class="fsec" open data-fields="filter-skill-level">
+                    <summary><span class="fsec-title">Experience</span><em class="sum"></em><svg class="ic chev" aria-hidden="true"><use href="#i-down"/></svg></summary>
+                    <div class="fsec-body"><div class="chips"><button type="button" class="fopt" data-set="filter-skill-level" data-value="">Any</button><button type="button" class="fopt" data-set="filter-skill-level" data-value="intern">Intern</button><button type="button" class="fopt" data-set="filter-skill-level" data-value="entry">Entry</button><button type="button" class="fopt" data-set="filter-skill-level" data-value="mid">Mid</button><button type="button" class="fopt" data-set="filter-skill-level" data-value="senior">Senior</button></div></div>
+                </details>
+                <details class="fsec" data-fields="filter-ats">
+                    <summary><span class="fsec-title">Platform</span><em class="sum"></em><svg class="ic chev" aria-hidden="true"><use href="#i-down"/></svg></summary>
+                    <div class="fsec-body"><div class="rows"><button type="button" class="frow" data-set="filter-ats" data-value=""><i class="radio"></i><span>All platforms</span></button><button type="button" class="frow" data-set="filter-ats" data-value="Greenhouse"><i class="radio"></i><span>Greenhouse</span><span class="cnt" data-ats="greenhouse"></span></button><button type="button" class="frow" data-set="filter-ats" data-value="Lever"><i class="radio"></i><span>Lever</span><span class="cnt" data-ats="lever"></span></button><button type="button" class="frow" data-set="filter-ats" data-value="Ashby"><i class="radio"></i><span>Ashby</span><span class="cnt" data-ats="ashby"></span></button><button type="button" class="frow" data-set="filter-ats" data-value="Workday"><i class="radio"></i><span>Workday</span><span class="cnt" data-ats="workday"></span></button><button type="button" class="frow" data-set="filter-ats" data-value="iCIMS"><i class="radio"></i><span>iCIMS</span><span class="cnt" data-ats="icims"></span></button><button type="button" class="frow" data-set="filter-ats" data-value="Bamboohr"><i class="radio"></i><span>BambooHR</span><span class="cnt" data-ats="bamboohr"></span></button><button type="button" class="frow" data-set="filter-ats" data-value="Paylocity"><i class="radio"></i><span>Paylocity</span><span class="cnt" data-ats="paylocity"></span></button></div></div>
+                </details>
+                <details class="fsec" data-fields="filter-salary-min">
+                    <summary><span class="fsec-title">Salary</span><em class="sum"></em><svg class="ic chev" aria-hidden="true"><use href="#i-down"/></svg></summary>
+                    <div class="fsec-body"><div class="chips"><button type="button" class="fopt" data-set="filter-salary-min" data-value="">Any</button><button type="button" class="fopt" data-set="filter-salary-min" data-value="50000">$50k+</button><button type="button" class="fopt" data-set="filter-salary-min" data-value="80000">$80k+</button><button type="button" class="fopt" data-set="filter-salary-min" data-value="100000">$100k+</button><button type="button" class="fopt" data-set="filter-salary-min" data-value="150000">$150k+</button></div><label class="mini" for="filter-salary-min">Custom minimum (USD / year)</label><input type="number" id="filter-salary-min" class="input" placeholder="e.g. 120000"></div>
+                </details>
+                <details class="fsec" data-fields="filter-remote-only,filter-hide-recruiters,filter-hide-applied">
+                    <summary><span class="fsec-title">Work type</span><em class="sum"></em><svg class="ic chev" aria-hidden="true"><use href="#i-down"/></svg></summary>
+                    <div class="fsec-body"><div class="switches">
+                        <label class="switch"><span>Remote only</span><input type="checkbox" id="filter-remote-only"><i class="track"></i></label>
+                        <label class="switch"><span>Hide recruiters</span><input type="checkbox" id="filter-hide-recruiters" checked><i class="track"></i></label>
+                        <label class="switch"><span>Hide applied &amp; skipped</span><input type="checkbox" id="filter-hide-applied"><i class="track"></i></label>
+                    </div></div>
+                </details>
+                <details class="fsec" data-fields="filter-include,filter-exclude">
+                    <summary><span class="fsec-title">Keywords</span><em class="sum"></em><svg class="ic chev" aria-hidden="true"><use href="#i-down"/></svg></summary>
+                    <div class="fsec-body"><label class="mini" for="filter-include">Title includes any of</label>
+                    <input type="text" id="filter-include" class="input" placeholder="python, backend">
+                    <label class="mini" for="filter-exclude">Title excludes</label>
+                    <input type="text" id="filter-exclude" class="input" placeholder="senior, staff, lead"></div>
+                </details>
+                <details class="fsec" data-fields="filter-company">
+                    <summary><span class="fsec-title">Company</span><em class="sum"></em><svg class="ic chev" aria-hidden="true"><use href="#i-down"/></svg></summary>
+                    <div class="fsec-body"><input type="text" id="filter-company" class="input" placeholder="Any company"></div>
+                </details>
+                <details class="fsec" data-fields="filter-status">
+                    <summary><span class="fsec-title">My list</span><em class="sum"></em><svg class="ic chev" aria-hidden="true"><use href="#i-down"/></svg></summary>
+                    <div class="fsec-body"><div class="chips"><button type="button" class="fopt" data-set="filter-status" data-value="">All</button><button type="button" class="fopt" data-set="filter-status" data-value="saved">Saved</button><button type="button" class="fopt" data-set="filter-status" data-value="applied">Applied</button><button type="button" class="fopt" data-set="filter-status" data-value="ignored">Skipped</button></div></div>
+                </details>
+            </div>
+
+            <div class="rail-foot d-lg-none">
+                <button type="button" class="btn-primary-x" id="apply-filters" data-bs-dismiss="offcanvas" data-bs-target="#nav-drawer">Show results</button>
+            </div>
+
+            <div class="sn-profile">
+                <span class="avatar-circle" aria-hidden="true">AS</span>
+                <div><b>Atul Senapati</b><small>Developer</small></div>
+            </div>
+
+            <div hidden>
+                <select id="filter-posted"><option value="">Any time</option><option value="1">Last 24 hours</option><option value="3">Last 3 days</option><option value="7">Last 7 days</option><option value="30">Last month</option></select>
+                <select id="filter-skill-level"><option value="">Any level</option><option value="intern">Intern</option><option value="entry">Entry</option><option value="mid">Mid</option><option value="senior">Senior</option></select>
+                <select id="filter-ats"><option value="">All platforms</option><option value="Ashby">Ashby</option><option value="Bamboohr">BambooHR</option><option value="Greenhouse">Greenhouse</option><option value="Lever">Lever</option><option value="Workday">Workday</option><option value="iCIMS">iCIMS</option><option value="Paylocity">Paylocity</option></select>
+                <select id="filter-status"><option value="">Everything</option><option value="saved">Saved</option><option value="applied">Applied</option><option value="ignored">Not interested</option></select>
+            </div>
+        </aside>
+
+        <!-- ══ Main panel ════════════════════════════════════ -->
+        <div class="panel">
+            <div class="m-top d-lg-none">
+                <span class="brand-name">Openings</span>
+                <button type="button" class="btn-ghost" data-bs-toggle="offcanvas" data-bs-target="#nav-drawer" aria-controls="nav-drawer">
+                    <svg class="ic" aria-hidden="true"><use href="#i-sliders"/></svg>Filters<span class="count-badge" hidden>0</span>
+                </button>
+            </div>
+
+            <div class="panel-body">
+                <section class="hero">
+                    <div class="hero-top">
+                        <div>
+                        <h1>Find your next role</h1>
+                        <p class="sub"><b id="result-count">—</b> roles match · <span id="total-jobs">…</span> total from <span id="total-companies">0</span> companies</p>
+                        </div>
+                        <span class="updated-pill" title="When the job data was last refreshed">Updated <b id="last-updated">--</b></span>
+                    </div>
+
+                    <div class="searchbar" role="search">
+                        <label class="sb-field" for="filter-title">
+                            <svg class="ic" aria-hidden="true"><use href="#i-search"/></svg>
+                            <input type="text" id="filter-title" placeholder="Job title or keyword" autocomplete="off">
+                        </label>
+                        <span class="sb-div" aria-hidden="true"></span>
+                        <label class="sb-field sb-loc" for="filter-location">
+                            <svg class="ic" aria-hidden="true"><use href="#i-pin"/></svg>
+                            <input type="text" id="filter-location" placeholder="City or Remote" autocomplete="off">
+                        </label>
+                        <button type="button" class="btn-grad" id="search-btn">Search</button>
+                    </div>
+                </section>
+
+                <div class="results-bar">
+                    <div id="load-progress" class="load-progress" role="status" aria-live="polite" hidden>
+                        <svg class="ring" viewBox="0 0 20 20" aria-hidden="true"><circle class="ring-bg" cx="10" cy="10" r="8"/><circle class="ring-fg" cx="10" cy="10" r="8" pathLength="100"/></svg>
+                        <span class="lp-text">Loading listings…</span>
+                    </div>
+                    <div id="chips-row" class="chips-row" hidden>
+                        <div id="active-filters" class="active-filters"></div>
+                        <button type="button" class="link-btn" id="clear-filters-2">Clear all</button>
+                    </div>
+                    <div class="dd dd-right" data-select="sort-select" data-label="Sort"></div>
+                </div>
+
+                <div id="loading" class="loader" aria-live="polite">
+                    <div class="loader-mark" aria-hidden="true"><i></i><i></i><i></i></div>
+                    <p class="loader-title">Fetching the latest openings</p>
+                    <p class="loader-sub">Pulling roles from 7 hiring platforms…</p>
+                </div>
+
+                <div id="results" style="display:none;">
+                    <div class="table-wrap">
+                        <table class="job-table">
+                            <caption class="visually-hidden">List of job openings</caption>
+                            <thead>
+                                <tr>
+                                    <th>Role</th>
+                                    <th>Company</th>
+                                    <th>Location</th>
+                                    <th>Platform</th>
+                                    <th class="sortable" data-sort="salary">Est. salary <svg class="ic sort-ic" aria-hidden="true"><use href="#i-sort"/></svg></th>
+                                    <th class="sortable" data-sort="posted">Posted <svg class="ic sort-ic" aria-hidden="true"><use href="#i-sort"/></svg></th>
+                                    <th class="th-actions"><span class="visually-hidden">Actions</span></th>
+                                </tr>
+                            </thead>
+                            <tbody id="jobs-body"></tbody>
+                        </table>
+                    </div>
+
+                    <div class="table-foot pagination-controls">
+                        <label class="entries">
+                            <select id="per-page" aria-label="Rows per page">
+                                <option value="25">25 entries</option>
+                                <option value="50" selected>50 entries</option>
+                                <option value="100">100 entries</option>
+                            </select>
+                            <svg class="ic" aria-hidden="true"><use href="#i-down"/></svg>
+                        </label>
+                        <span id="page-info-bottom" class="showing">Showing 1 to 50 of 0 results</span>
+                        <div class="pager">
+                            <button class="pg" id="prev-page-bottom" aria-label="Previous page" disabled><svg class="ic" aria-hidden="true"><use href="#i-left"/></svg></button>
+                            <span id="pager-pages" class="pager-pages"></span>
+                            <button class="pg" id="next-page-bottom" aria-label="Next page"><svg class="ic" aria-hidden="true"><use href="#i-right"/></svg></button>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="site-footer">Aggregated from Greenhouse, Lever, Ashby, Workday, iCIMS, BambooHR &amp; Paylocity · refreshed daily · Developed by <strong>Atul Senapati</strong></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- hidden: sort source-of-truth + legacy hooks -->
+    <select id="sort-select" hidden aria-label="Sort results">
+        <option value="">Default</option>
+        <option value="posted:desc">Newest first</option>
+        <option value="posted:asc">Oldest first</option>
+        <option value="salary:desc">Salary: high to low</option>
+        <option value="salary:asc">Salary: low to high</option>
+        <option value="company:asc">Company A–Z</option>
+    </select>
+
+    <div class="toast-container position-fixed top-0 start-50 translate-middle-x p-3" style="z-index: 1060;">
+        <div id="job-toast" class="toast align-items-center text-white bg-primary border-0" role="alert" aria-live="polite">
+            <div class="d-flex">
+                <div class="toast-body" id="toast-message">Processing complete.</div>
+                <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
+            </div>
+        </div>
+    </div>
+    <div id="process-fab-container" style="display:none"></div>
+</body>
+
+</html>
